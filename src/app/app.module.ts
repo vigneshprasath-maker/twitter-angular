@@ -8,26 +8,24 @@ import { LeftsidebarComponent } from './shared/leftsidebar/leftsidebar.component
 import { MiddlesectionComponent } from './shared/middlesection/middlesection.component';
 import { RightsidebarComponent } from './shared/rightsidebar/rightsidebar.component';
 import { LoginComponent } from './shared/login/login.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TrendingComponent } from './shared/trending/trending.component';
 import { TrendingmiddleComponent } from './shared/trendingmiddle/trendingmiddle.component';
+import { DashboardModule } from './shared/dashboard/dashboard.module';
+import { TrendingModule } from './shared/trending/trending.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    LeftsidebarComponent,
-    MiddlesectionComponent,
-    RightsidebarComponent,
     LoginComponent,
-    TrendingComponent,
-    TrendingmiddleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    FormsModule,
+    DashboardModule,
+    TrendingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from 'src/app/core/service.service';
 
 @Component({
   selector: 'app-trendingmiddle',
@@ -8,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrendingmiddleComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
+  constructor(private service:ServiceService) { }
   trends:any;
   count=10;
   ngOnInit(): void { 
-    this.http.get('https://coda-twitter-replica-backend.herokuapp.com/trends').subscribe(data=> {
-      this.trends=data[0].trends;
+    this.service.getTrends().subscribe(data=> {
+      this.trends=data[0].trends.slice(0,10);
        console.log("trends",this.trends);
     });
   }

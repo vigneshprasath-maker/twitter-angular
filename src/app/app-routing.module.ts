@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './shared/dashboard/dashboard.component';
 import { LoginComponent } from './shared/login/login.component';
 import { TrendingComponent } from './shared/trending/trending.component';
+import { TrendingModule } from './shared/trending/trending.module';
 
 const routes: Routes = [
   {
@@ -11,11 +12,11 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component:DashboardComponent
+    loadChildren: () => import('./shared/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path: 'trending',
-    component:TrendingComponent
+    loadChildren: () => import('./shared/trending/trending.module').then(m => m.TrendingModule)
   }
 ];
 
