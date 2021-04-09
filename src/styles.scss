@@ -1,0 +1,104 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.flex {
+    display: flex;
+}
+.overallsection {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 22% 50% 26%;
+}
+.leftsection {
+    padding: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.leftsidetext {
+    margin-left: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.leftsideoverall {
+    position: fixed;
+}
+.middleoverall {
+    border-left: 1px solid rgb(235, 238, 240);
+    border-right: 1px solid rgb(235, 238, 240);
+}
+.rightsideoverall {
+    position: sticky;
+
+}
+.spacebetween {
+    justify-content: space-between;
+}
+.wid-100 {
+    width: 100%;
+}
+.marright6 {
+    margin-right: 6px;
+}
+.marright16 {
+    margin-right: 16px;
+}
+.flex-column {
+    flex-direction: column;
+}
+.font36 {
+    font-size: 30px;
+}
+@media only screen and (max-width: 769px) {
+
+    .rightsideoverall {
+        display: none;
+    }
+    .overallsection {
+        max-width: none;
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+    .leftsidetext {
+        display: none;
+    }
+
+   .loginenter {
+    margin-left:16px;
+    margin-right: 0;;
+}
+.tabdisplay {
+    display: none;
+}
+   }
+
+@media only screen and (max-width: 500px) {
+   .leftsideoverall {
+       display: none;
+   }
+   .rightsideoverall {
+       display: none;
+   }
+   .middleoverall {
+       width: 100%;
+       max-width: 100%;
+   }
+   .overallsection {
+       max-width: none;
+       display: block;
+   }
+   .loginenter {
+    display: none;
+}
+.tabitems {
+    font-size: 15px !important;
+}
+.inputsection {
+    width: 300px !important;
+}
+.cog{
+    display: none;
+}
+  }

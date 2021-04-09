@@ -1,0 +1,54 @@
+.textbold {
+    font-weight: 600;
+}
+.innermiddle {
+    justify-content: space-between;
+    border-bottom:1px solid rgb(235, 238, 240) ;
+}
+.imgleft img {
+    width: 48px;
+    border-radius: 50%;
+    height: 48px;
+    margin-right: 12px;;
+}
+.paddingleft16 {
+    padding-left: 16px;
+}
+.paddingright16 {
+    padding-right: 16px;
+}
+.middlesections {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.postdescription {
+    line-height: 1.6em;
+    padding-top: 10px;
+}
+.postdescription img {
+    width: 100%;
+    display: inline-block;
+}
+.middle1 {
+    margin-left: 16px;
+    margin-right: 16px;
+    border-bottom: 1px solid rgb(235, 238, 240);
+}
+.topicheading {
+    font-size: 18px;
+    font-weight: 600;
+}
+.pad10 {
+    padding: 10px;
+}
+.postimg {
+    margin-top: 10px;
+}
+.inlineblock {
+
+    width: 100%;
+    display: inline-block;
+}
+.postimg img ,.postimg iframe{
+    border-radius: 6%;
+}
