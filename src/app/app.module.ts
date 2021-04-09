@@ -13,6 +13,15 @@ import { TrendingComponent } from './shared/trending/trending.component';
 import { TrendingmiddleComponent } from './shared/trendingmiddle/trendingmiddle.component';
 import { DashboardModule } from './shared/dashboard/dashboard.module';
 import { TrendingModule } from './shared/trending/trending.module';
+import { SigninComponent } from './shared/signin/signin.component';
+import { SignupComponent } from './shared/signup/signup.component';
+import { CreateComponent } from './shared/signup/create/create.component';
+import { OtpComponent } from './shared/signup/otp/otp.component';
+import { PasswordComponent } from './shared/signup/password/password.component';
+import { SignUpFormComponent } from './shared/signup/sign-up-form/sign-up-form.component';
+import { TrackComponent } from './shared/signup/track/track.component';
+import { LandingComponent } from './shared/landing/landing.component';
+import { LandingModule } from './shared/landing/landing.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +34,8 @@ import { TrendingModule } from './shared/trending/trending.module';
     HttpClientModule,
     FormsModule,
     DashboardModule,
-    TrendingModule
+    TrendingModule,
+    LandingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

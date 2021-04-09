@@ -8,7 +8,7 @@ import { TrendingModule } from './shared/trending/trending.module';
 const routes: Routes = [
   {
     path: 'login',
-    component:LoginComponent
+    loadChildren: () => import('./shared/landing/landing.module').then(m => m.LandingModule)
   },
   {
     path: 'dashboard',
