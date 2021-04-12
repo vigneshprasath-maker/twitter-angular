@@ -1,0 +1,140 @@
+<div class="overallmain">
+    <div class="profilemaintop">
+<!-- for image,bg,tabs -->
+<div class="height53" >
+<div class="flex">
+<div class="blue innerprofile"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+<div class="flex flex-column">
+<div class="font20 fontweight600" >Fareed</div>
+<div class="gray">1 tweet</div>
+</div>
+</div>
+</div>
+<div class="bg-gray">
+</div>
+<div class="imageandtab">
+
+<div class="image flex spacebetween" >
+
+    <div class="flex flex-column marleft20 martop-10" >
+        <div class="profileimg" >
+            <img src="https://www.journalaprj.com/public/journals/28/homepageImage_en_US.png" >
+        </div>
+        <div class="martop10">
+            <div class="textbold fontweight600 font20" >Fareed</div> 
+         <div class="textprofile">@Fareed78988492</div>
+
+
+         <div class="martop10 gray1 gray1" ><i class="fa fa-calendar marright6" aria-hidden="true"></i>Joined April 2021</div>
+         <div class="flex">
+         <div class="martop10 gray1 marright6" >2 Following </div>
+         <div class="martop10 gray1" >0 Followers</div>
+        </div>
+         
+         </div>
+    </div>
+    
+
+
+<div class="marright20 martop20">
+<button>setupprofile</button>
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="flex tabs spacearound font15" >
+    <div class="tabitems active">Tweets</div>
+    <div class="tabitems" >Tweets & replies</div>
+    
+    <div class="tabitems" >Media</div>
+    <div class="tabitems" >Likes</div>
+
+</div>
+
+</div>
+    </div>
+
+
+
+
+    <div class="middle1" *ngFor="let list of dataa;index as i" [class.border0]="list.retweeted">
+
+        <div class="middlesections" *ngIf="list.retweeted">
+        <div class=" flex">
+            <div>
+            <div class="imgleft"><img src={{list.user.profile_image_url}}></div>
+    
+        </div>
+        <div class="flex spacebetween wid-100">
+            <div class="flex flex-column">
+            <div class="flex">
+            <div class="marright6 topicheading" >{{list.user.name}}.</div>
+            <div class="marright6 martop5 mobset" >@{{list.user.screen_name}}</div>
+            <div class="marright6 martop5 mobset">{{list.created_at | date:'MMM d'}}</div>
+    
+        </div>
+            <div class="postdescription">
+                <div>{{list.full_text}}
+                </div>
+                <div class="postimg" *ngIf="list.entities.media"><img src={{list.entities.media[0].media_url}}></div>
+                
+            </div>
+            <div class="flex spacebetween pad10">
+                <div class="flex">
+                    <div class="marright6"> 
+                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    </div>
+    
+                    <div> 
+                        
+                    </div>
+                </div>
+                
+                <div class="flex">
+                
+                    <div class="marright6" [class.green]="list.retweeted">
+                        <i class="fa fa-retweet" aria-hidden="true"></i>
+    
+                    </div>
+                    <div [class.green]="list.retweeted"> 
+                        {{list.retweet_count}}
+    
+                    </div>
+                </div>
+                
+                <div class="flex">
+                    
+                <div class="marright6" [class.red]="list.favorited">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                    <div [class.red]="list.favorited"> 
+                        {{list.favorite_count}}
+    
+                    </div>
+                </div>
+                
+                <div class="flex">
+                    <div class="marright6"> 
+                        <i class="fa fa-upload" aria-hidden="true"></i>
+                    </div>
+                    <div> 
+    
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+            <div><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+</div>

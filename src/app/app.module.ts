@@ -22,6 +22,7 @@ import { SignUpFormComponent } from './shared/signup/sign-up-form/sign-up-form.c
 import { TrackComponent } from './shared/signup/track/track.component';
 import { LandingComponent } from './shared/landing/landing.component';
 import { LandingModule } from './shared/landing/landing.module';
+import { ProfileModule } from './shared/profile/profile.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { LandingModule } from './shared/landing/landing.module';
     FormsModule,
     DashboardModule,
     TrendingModule,
-    LandingModule
+    ReactiveFormsModule,
+    LandingModule,
+    ProfileModule
   ],
   providers: [],
   bootstrap: [AppComponent]

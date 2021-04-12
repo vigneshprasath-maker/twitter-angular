@@ -1,16 +1,16 @@
 <div class="leftsideoverall">
-<div class="flex leftsection">
-<div class="leftsideimage active font36">
+<div class="flex marleft20 marright20 pad18" >
+<div class="leftsideimage navactive font36">
 <i class="fa fa-twitter" aria-hidden="true" ></i>
 </div>
 </div>
 
 <div class="flex leftsection">
-<div class="leftsideimage active">
+<div class="leftsideimage navactive">
 <i class="fa fa-home" aria-hidden="true"></i>
 </div>
-<div class="leftsidetext active">
-<a [routerLink] = "['/dashboard']"> 
+<div class="leftsidetext navactive blue">
+<a [routerLink] = "['/dashboard']" class="blue"> 
 Home
 </a>
 </div>
@@ -68,7 +68,9 @@ Lists
 <i class="fa fa-user" aria-hidden="true"></i>
 </div>
 <div class="leftsidetext">
+    <a [routerLink] = "['/profile']" class="blue"> 
 Profile
+</a>
 </div>
 </div>
 
@@ -97,8 +99,8 @@ More
     <img src="https://pbs.twimg.com/profile_images/1281402055202967552/Hog0lopN_x96.jpg" class="size40">
 </div>
 <div class="flex flex-column  marright16 tabdisplay" >
-    <div>vignesh</div>
-    <div>@vignesh hemanth</div>
+    <div>{{username}}</div>
+    <div>@{{username}}</div>
 </div>
 <div class="tabdisplay">
     <i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>

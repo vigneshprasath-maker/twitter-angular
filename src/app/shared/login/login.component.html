@@ -1,22 +1,31 @@
 <div class="first">
     <div class="css">
+
         <div class="icon">
             <i class="fa fa-twitter fa-3" aria-hidden="true"></i>
         </div>
+    
         <div class="heading css1">
-           <h1>Log in to Twitter</h1>
+           <h1>Log in to Twitter</h1> 
         </div>
-        <div class="input">
+
+        <form [formGroup]="demoForm">
+
+        <div class="input">  
             <div class="input-field">
-                <input type="text" placeholder="Phone,email or username" name="uname" id="uname" formControl="uname" required>
+                <input type="text" placeholder="Phone,email, or username" formControlName="user" required>
             </div>
             <div class="input-field">
-                <input type="password" placeholder="Password" name="password" id="password" required>
+                <input type="password" placeholder="Password" formControlName="pass" required>
             </div>
         </div>
+
         <div class="button">
-            <div class="button1" (click)="navigate()">Log in</div>
+            <div class="button1" (click)="login()">Log in</div>
         </div>
+
+    </form>
+
         <div class="footer">
             <div class="footer1">
                 <span>Forgot password?</span>
@@ -24,6 +33,8 @@
                 <span>Sign up for Twitter</span>
             </div>
         </div>
+
     </div>
 </div>
-<!-- <app-middlesection [uname]="uname" *ngIf="uname"></app-middlesection> -->
+
+<app-middlesection [username]="username" *n></app-middlesection>

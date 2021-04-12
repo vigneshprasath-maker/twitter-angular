@@ -1,7 +1,9 @@
 input {
-    border-radius: 26px;
+    border-top-right-radius: 26px;
     height: 20px;
-    background-color: rgb(235, 238, 240);
+    border-bottom-right-radius: 26px;
+    height: 20px;
+    background-color: #ebeef0;
     color: white;
     border: #a3acb2;
     width: 100%;
@@ -58,4 +60,20 @@ button {
 .borderbottomgrey {
 
     border-bottom:1px solid rgb(235, 238, 240) ;
+}
+.fasearch {
+    border-top-left-radius: 26px;
+    height: 20px;
+    border-bottom-left-radius: 26px;
+    background-color: #ebeef0;
+    color: #a3acb2;;
+    border: #a3acb2;
+    /* width: 100%; */
+    padding: 12px;
+}
+.btn1 {
+    margin-left: 25%;
+}
+.btn2 {
+    margin-right: 30%;
 }

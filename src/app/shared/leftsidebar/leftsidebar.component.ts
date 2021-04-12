@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./leftsidebar.component.scss']
 })
 export class LeftsidebarComponent implements OnInit {
-
+  username:any;
   constructor() { }
 
   ngOnInit(): void {
+
+
+    this.username=localStorage.getItem('uname');
+    console.log("userinleftside",this.username)
   }
 
 }

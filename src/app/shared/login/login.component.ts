@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,14 +9,28 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router:Router) { }
-  uname :string;
+  demoForm:any;
+  username:string='';
+
+  constructor(private fb : FormBuilder,private router:Router) { 
+
+    this.demoForm = FormGroup;
+    this.demoForm = fb.group({
+      user : [{value:"",disabled:false},[Validators.required]],
+      pass : [{value:"",disabled:false},[Validators.required]]
+    })
+
+  }
 
   ngOnInit(): void {
   }
-  navigate() {
-    // this.uname=document.getElementById("uname");
-    this.router.navigate(['dashboard']);
+
+  login() {
+    this.username=this.demoForm.value.user;
+    localStorage.setItem('uname',this.username)
+    console.log(this.username);
+    console.log(this.demoForm.value.pass);
+    this.router.navigate(["dashboard"]);
   }
 
 }

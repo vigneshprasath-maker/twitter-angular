@@ -1,6 +1,6 @@
 <div class="trendingmainoverall middleoverall" >
 <div class="searchtab">
-    <div class="flex" style="justify-content: space-between;">
+    <div class="flex spacebetween ">
         <div class="inputsection">
             <input type="text" placeholder="Search twitter" value=""/>
          </div>
@@ -8,8 +8,8 @@
     </div>
 
 
-    <div class="flex tabs">
-        <div class="tabitems active" style="border-bottom:2px solid rgb(29, 161, 242)">For You</div>
+    <div class="flex tabs spacebetween">
+        <div class="tabitems active">For You</div>
         <div class="tabitems" >Covid-19</div>
         
         <div class="tabitems" >Trending</div>
@@ -24,18 +24,18 @@
 
 
 
-<div class="innermaindiv" style="border-bottom: 1px solid rgb(235, 238, 240);" *ngFor="let list of trends;index as i">
+<div class="innermaindiv borderone"  *ngFor="let list of trends;index as i">
     <div>
-    <div class="flex" style="justify-content: space-between;" >
-        <div class="flex flex-column" style="margin-left: 20px;">
-            <div style="margin-top: 10px;">
+    <div class="flex spacebetween" >
+        <div class="flex flex-column marleft20">
+            <div class="martop10">
                 Trending in India</div>
-            <div style="margin-top: 6px;">{{list.name}}</div>
-            <div style="margin-top: 6px;margin-bottom: 10px;">
+            <div class="martop6" >{{list.name}}</div>
+            <div class="marbottom10 martop6">
                 {{list.tweet_volume}} tweets</div>
 
         </div>
-        <div style="margin-top: 6px;margin-right: 20px;"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+        <div class="martop6 marright20 " ><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
 
     </div>
 

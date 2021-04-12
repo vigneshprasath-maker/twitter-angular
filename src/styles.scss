@@ -1,7 +1,20 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+$flex:flex;
+$flex-column:column;
+$space-between:space-between;
+$space-around:space-around;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 
 .flex {
-    display: flex;
+    display: $flex;
+}
+.spacebetween {
+    justify-content: $space-between;
+}
+.spacearound {
+    justify-content: $space-around;
 }
 .overallsection {
     max-width: 1300px;
@@ -18,7 +31,6 @@
 }
 .leftsidetext {
     margin-left: 20px;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 20px;
     font-weight: 600;
 }
@@ -46,11 +58,91 @@
     margin-right: 16px;
 }
 .flex-column {
-    flex-direction: column;
+    flex-direction: $flex-column;
 }
 .font36 {
     font-size: 30px;
 }
+.marleft20 {
+    margin-left: 20px;
+}
+.marright20 {
+    margin-right: 20px;
+}
+.martop10 {
+    margin-top: 10px;
+}
+.marbottom10 {
+    margin-bottom: 10px;
+}
+.martop5 {
+    margin-top: 5px;
+}
+.martop6 {
+    margin-top: 6px;
+}
+.martop20 {
+    margin-top: 20px;
+}
+.martop40 {
+    margin-top: 40px;
+}
+.pad20 {
+    padding: 20px;
+}
+.font15 {
+    font-size: 15px;
+}
+.font20 {
+    font-size: 20px;
+}
+.marleft10 {
+    margin-left: 10px;
+}
+.marright10 {
+    margin-right: 10px;
+}
+.fontweight600 {
+    font-weight: 600;
+}
+
+.gray {
+    color: #5B7083;
+}
+.gray1 {
+    color: rgb(91, 112, 131)
+}
+
+.tabitems {
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    color:#5b7083;
+    font-weight: 600;
+}
+
+.tabs {
+    margin: 12px;
+    overflow-x: scroll;
+}
+
+.active {
+    color: rgb(29, 161, 242);
+    border-bottom:2px solid rgb(29, 161, 242)
+}
+.tabitems:hover {
+    color: rgb(29, 161, 242);
+    background-color: rgb(29, 161, 242,0.1);
+}
+
+.blue {
+    color: rgb(29, 161, 242);
+}
+.pad18 {
+    padding: 18px;
+}
+
+
 @media only screen and (max-width: 769px) {
 
     .rightsideoverall {
@@ -99,6 +191,15 @@
     width: 300px !important;
 }
 .cog{
+    display: none;
+}
+.topicheading {
+    font-size: 12px;
+}
+.mobset {
+    font-size: 10px;
+}
+.mobdisplay {
     display: none;
 }
   }

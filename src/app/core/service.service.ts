@@ -14,6 +14,6 @@ export class ServiceService {
 
   }
   getTrends() {
-    return this.http.get('https://coda-twitter-replica-backend.herokuapp.com/trends');
+    return this.http.get('https://coda-twitter-replica-backend.herokuapp.com/trends1');
   }
 }

@@ -13,13 +13,14 @@ input {
 }
 .tabitems {
     padding: 12px;
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
     color:#5b7083;
     font-weight: 600;
 }
 .active {
     color: rgb(29, 161, 242);
+    border-bottom:2px solid rgb(29, 161, 242)
 }
 .tabitems:hover {
     color: rgb(29, 161, 242);
@@ -34,4 +35,7 @@ input {
     margin-top: 10px;
         margin-right: 10px;
         font-size: 23px;
+}
+.borderone {
+    border-bottom: 1px solid rgb(235, 238, 240);
 }

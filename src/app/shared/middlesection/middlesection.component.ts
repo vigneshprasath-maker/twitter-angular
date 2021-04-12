@@ -11,14 +11,15 @@ import { ServiceService } from 'src/app/core/service.service';
   providers: [DatePipe]
 })
 export class MiddlesectionComponent implements OnInit {
-  @Input() uname:any;
+  username:string;
   constructor(private service:ServiceService,private datePipe:DatePipe) {}
   dataa:any;
   trends:any;
   reply:any;
   images:any;
   ngOnInit(): void {
-    console.log(this.uname)
+    this.username=localStorage.getItem('uname');
+    console.log("username",this.username)
 
   this.service.getHome().subscribe(data=> {
     this.dataa=data;
