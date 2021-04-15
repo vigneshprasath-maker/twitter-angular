@@ -14,8 +14,10 @@ export class TrendingmiddleComponent implements OnInit {
   count=10;
   ngOnInit(): void { 
     this.service.getTrends().subscribe(data=> {
-      this.trends=data[0].trends.slice(0,10);
-       console.log("trends",this.trends);
+      console.log(data);
+      this.trends=data[0];
+      this.trends=this.trends[0].trends;
+       console.log("trends1",this.trends);
     });
   }
 

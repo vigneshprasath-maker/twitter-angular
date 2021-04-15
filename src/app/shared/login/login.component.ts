@@ -16,8 +16,8 @@ export class LoginComponent implements OnInit {
 
     this.demoForm = FormGroup;
     this.demoForm = fb.group({
-      user : [{value:"",disabled:false},[Validators.required]],
-      pass : [{value:"",disabled:false},[Validators.required]]
+      user : [{value:"",disabled:false},[Validators.required,Validators.minLength(4)]],
+      pass : [{value:"",disabled:false},[Validators.required,Validators.pattern("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")]]
     })
 
   }
@@ -27,6 +27,9 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.username=this.demoForm.value.user;
+    if(this.demoForm.invalid) {
+      return;
+    }
     localStorage.setItem('uname',this.username)
     console.log(this.username);
     console.log(this.demoForm.value.pass);

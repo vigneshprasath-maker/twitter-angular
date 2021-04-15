@@ -23,11 +23,19 @@ import { TrackComponent } from './shared/signup/track/track.component';
 import { LandingComponent } from './shared/landing/landing.component';
 import { LandingModule } from './shared/landing/landing.module';
 import { ProfileModule } from './shared/profile/profile.module';
+import { MessagesComponent } from './shared/messages/messages.component';
+import { MessagesModule } from './shared/messages/messages.module';
+import { NotificationsComponent } from './shared/notifications/notifications.component';
+import { BookmarkComponent } from './shared/bookmark/bookmark.component';
+import { BookmarkModule } from './shared/bookmark/bookmark.module';
+import { ListComponent } from './shared/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    NotificationsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +46,9 @@ import { ProfileModule } from './shared/profile/profile.module';
     TrendingModule,
     ReactiveFormsModule,
     LandingModule,
-    ProfileModule
+    ProfileModule,
+    MessagesModule,
+    BookmarkModule
   ],
   providers: [],
   bootstrap: [AppComponent]

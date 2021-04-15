@@ -1,0 +1,66 @@
+$primary-color: rgba(29,161,242,1.00);
+$font:Chirp, Verdana, System;
+.parent{
+    position: relative;
+    border-right: 1px solid rgb(235, 238, 240);
+    border-left: 1px solid rgb(235, 238, 240);
+}
+
+.note{
+    margin-top: 20px;
+    font-family: $font;
+    color: inherit;
+    font: inherit;
+    white-space: inherit;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.icon{
+    color: $primary-color;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.first{
+    display: flex;
+}
+
+.second{
+    margin-top: 30px;
+    font-family: $font;
+    color: gray;
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(235, 238, 240);
+}
+
+.third{
+    display: flex;
+    border-bottom: 1px solid rgb(235, 238, 240);
+    padding-bottom: 12px;
+    padding-top: 12px;padding-left: 16px;
+    padding-right: 16px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.all {
+    height: 30px;
+    border-bottom: 1px solid rgb(29, 161, 242);
+}
+.mentions {
+    height: 30px;
+    border-bottom: 1px solid rgb(29, 161, 242);
+}
+
+.icon2{
+    color: $primary-color;
+}
+
+.fa-3{
+    font-size: 2em;
+}
+.letter{
+    margin-left: 20px;
+}

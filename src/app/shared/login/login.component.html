@@ -13,10 +13,12 @@
 
         <div class="input">  
             <div class="input-field">
-                <input type="text" placeholder="Phone,email, or username" formControlName="user" required>
+                <input type="text" placeholder="Phone,email, or username" formControlName="user">
+                <small *ngIf="demoForm.controls['user'].touched && demoForm.controls['user'].invalid" class="text-danger">invalid value</small>
             </div>
             <div class="input-field">
-                <input type="password" placeholder="Password" formControlName="pass" required>
+                <input type="password" placeholder="Password" formControlName="pass">
+                <small *ngIf="demoForm.controls['pass'].touched && demoForm.controls['pass'].invalid" class="text-danger">invalid value</small>
             </div>
         </div>
 

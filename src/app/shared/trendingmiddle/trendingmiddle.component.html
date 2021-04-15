@@ -1,7 +1,7 @@
 <div class="trendingmainoverall middleoverall" >
 <div class="searchtab">
     <div class="flex spacebetween ">
-        <div class="inputsection">
+        <div class="inputsection martop10">
             <input type="text" placeholder="Search twitter" value=""/>
          </div>
         <div class="cog"><i class="fa fa-cog" aria-hidden="true"></i></div>
@@ -31,7 +31,7 @@
             <div class="martop10">
                 Trending in India</div>
             <div class="martop6" >{{list.name}}</div>
-            <div class="marbottom10 martop6">
+            <div class="marbottom10 martop6" *ngIf="list.tweet_volume">
                 {{list.tweet_volume}} tweets</div>
 
         </div>
