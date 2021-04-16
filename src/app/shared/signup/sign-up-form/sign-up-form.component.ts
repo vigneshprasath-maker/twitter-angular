@@ -348,6 +348,57 @@ export class SignUpFormComponent implements OnInit {
         next.style.opacity = "1";
       }
     });
+    pass.addEventListener('input', () => {
+      var next = (<HTMLInputElement>document.getElementById("next"));
+      // console.log(this.validate)
+      if (this.validate) {
+        next.disabled = true;
+        next.style.opacity = "0.3";
+      } else {
+        next.disabled = false;
+        next.style.opacity = "1";
+      }
+    });
+    uname.addEventListener('input', () => {
+      var next = (<HTMLInputElement>document.getElementById("next"));
+      if (this.validate) {
+        next.disabled = true;
+        next.style.opacity = "0.3";
+      } else {
+        next.disabled = false;
+        next.style.opacity = "1";
+      }
+    });
+    day.addEventListener('change', () => {
+      var next = (<HTMLInputElement>document.getElementById("next"));
+      if (this.validate) {
+        next.disabled = true;
+        next.style.opacity = "0.3";
+      } else {
+        next.disabled = false;
+        next.style.opacity = "1";
+      }
+    });
+    month.addEventListener('change', () => {
+      var next = (<HTMLInputElement>document.getElementById("next"));
+      if (this.validate) {
+        next.disabled = true;
+        next.style.opacity = "0.3";
+      } else {
+        next.disabled = false;
+        next.style.opacity = "1";
+      }
+    });
+    year.addEventListener('change', () => {
+      var next = (<HTMLInputElement>document.getElementById("next"));
+      if (this.validate) {
+        next.disabled = true;
+        next.style.opacity = "0.3";
+      } else {
+        next.disabled = false;
+        next.style.opacity = "1";
+      }
+    })
     // SignUpFormComponent.signup.controls['email'].valueChanges.subscribe(() => {
     //   var next = (<HTMLInputElement>document.getElementById("next"));
     //   if (this.validate) {
